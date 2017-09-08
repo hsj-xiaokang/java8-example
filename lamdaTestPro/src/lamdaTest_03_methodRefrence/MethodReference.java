@@ -56,6 +56,8 @@ public class MethodReference {
         Person[] persons1 = personList.toArray(new Person[personList.size()]);
         System.out.print("排序前: ");
         printArray(persons1);
+        
+        
 
         // 方法引用::引用静态方法
         Arrays.sort(persons1, MethodReference::myCompare);
@@ -66,6 +68,8 @@ public class MethodReference {
         Person[] persons2 = personList.toArray(new Person[personList.size()]);
         System.out.print("排序前: ");
         printArray(persons2);
+        
+        
 
         // 方法引用::用特定对象的实例方法
         Arrays.sort(persons2, p1::compare);
@@ -76,6 +80,8 @@ public class MethodReference {
         Person[] persons3 = personList.toArray(new Person[personList.size()]);
         System.out.print("排序前: ");
         printArray(persons3);
+        
+        
 
         // 方法引用::引用特定类型的任意对象的实例方法
         Arrays.sort(persons3, Person::compareTo);

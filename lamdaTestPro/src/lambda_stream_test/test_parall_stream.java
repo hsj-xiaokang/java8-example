@@ -17,7 +17,7 @@ import java.util.List;
 public class test_parall_stream {
        public static void main(String[] args) {
     	 //list可以使用流
-   		List<shape> shapes = new ArrayList<>();
+   		List<shape> shapes = new ArrayList<>(10);
    		shapes.add(new shape().setColor(shape.RED).setWeight(1));
    		shapes.add(new shape().setColor(shape.RED).setWeight(1));
    		shapes.add(new shape().setColor(shape.RED).setWeight(1));

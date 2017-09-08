@@ -11,7 +11,10 @@ public class lambda_test_04_otherClassCreateFun {
 	 * @return
 	 */
       public Runnable createRuunnable(){
-    	final int ab = 60000;//方法结束了还可以用
+//    	final int ab = 60000;//方法结束了还可以用
+    	  
+    	//java8 不强制final在方法类中的必须显示，编译器已经帮我们做好了
+        int ab = 60000;//方法结束了还可以用
    		Runnable rb_1_other =() -> {
    			System.out.println(" lambda run_create_other    -> "+"   "+ab);
    		};

@@ -18,7 +18,7 @@ public interface DefaulableFactory {
 	 *         2.静态方法static
 	 *         
 	 *         
-	 *         
+	 *  //相当于返回一个新的对象::new     
 	    @FunctionalInterface
         public interface Supplier<T> {
                 T get();

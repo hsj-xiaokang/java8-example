@@ -17,7 +17,7 @@ public class test {
    public self_Function_defined<Integer,String,String> sfd_close_package(){
 	   final String param_1 = "1";
 	   final String param_2 = "1";
-	   self_Function_defined<Integer,String,String> sfd_ = (String x,String y )->{
+	   self_Function_defined<Integer,String,String> sfd_ = ( x, y )->{
 		   return Integer.parseInt(x)
 				   + Integer.parseInt(y) 
 				   + Integer.parseInt(param_1) 
@@ -35,12 +35,16 @@ public class test {
     */
    public static void main(String[] args) {
 	   
+	   //在一次实现 self_Function_defined
 	   self_Function_defined<Integer,String,String> sfd = ( x, y )->{
 		   return Integer.parseInt(x) + Integer.parseInt(y);
 	   };
+	   
 	   //执行该自定义的方法
 	   int resulte = sfd.self_run("10", "10");
 	   System.out.println("resulte   "+resulte);//20
+	   
+	   
 	   
 	   //自定义的函数default调用自己
 	   self_Function_defined<Integer,String,String> sfd_1 = sfd.rt();
@@ -56,13 +60,9 @@ public class test {
 	   
 	   
 	   
-	   
-	   Supplier<test> c =  () -> { //lambda常规写法
-		   return new test();
-		   };
+	 //Supplier -> lambda常规写法
+	   Supplier<test> c =  () -> { return new test();};
 	   Supplier<test> c_ = test::new;//简写
-	   
-	   
 	   
 	   c.get().printf();
 	   c_.get().printf();

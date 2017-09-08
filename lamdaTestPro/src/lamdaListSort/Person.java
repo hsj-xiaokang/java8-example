@@ -42,10 +42,11 @@ public class Person {
     }
     
     
-    public selef<Person,Integer> s = (Person p) -> { return p.getOrder();};
+//    public selef<Person,Integer> s = (Person p) -> { return p.getOrder();};
+    public selef<Person,Integer> s = (p) ->  p.getOrder();
     
     public static void main(String[] args) {
-        List<Person> listA = new ArrayList<Person>();
+        List<Person> listA = new ArrayList<Person>(5);
         Person p1 = new Person();  
         Person p2 = new Person();
         Person p3 = new Person();
@@ -68,8 +69,12 @@ public class Person {
 //                return -arg0.getOrder().compareTo(arg1.getOrder());
 //            }
 //        });
+        
 //            listA.sort(( arg0,  arg1) -> arg0.getOrder().compareTo(arg1.getOrder()));
-          Collections.sort(listA, (Person o1, Person o2) -> { return o1.getOrder().compareTo(o2.getOrder());});//实现函数体
+        
+//          Collections.sort(listA, (Person o1, Person o2) -> { return o1.getOrder().compareTo(o2.getOrder());});//实现函数体
+        
+        Collections.sort(listA, (o1, o2) -> { return o1.getOrder().compareTo(o2.getOrder());});//实现函数体
 
         
         for (Person p : listA) {

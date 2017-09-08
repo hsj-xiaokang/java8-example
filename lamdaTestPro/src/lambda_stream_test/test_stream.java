@@ -21,7 +21,7 @@ public class test_stream {
 	public static void main(String[] args) {
 		
 		//list可以使用流
-		List<shape> shapes = new ArrayList<>();
+		List<shape> shapes = new ArrayList<>(10);
 		shapes.add(new shape().setColor(shape.RED));
 		shapes.add(new shape().setColor(shape.RED));
 		shapes.add(new shape().setColor(shape.RED));

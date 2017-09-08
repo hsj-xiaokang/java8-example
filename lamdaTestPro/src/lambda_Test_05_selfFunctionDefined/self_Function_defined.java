@@ -12,7 +12,7 @@ public interface self_Function_defined<T,X,Y> {
          
          //返回self_run的实现
          default self_Function_defined<T,X,Y> rt(){
-        	 return ( x , y)->{//匿名的lambda返回self_run的实现
+        	 return (X x ,Y y)->{//匿名的lambda返回self_run的实现
         		 return self_run( x , y);
         	 };
          }
