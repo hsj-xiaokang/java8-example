@@ -10,6 +10,13 @@ import java.util.stream.Stream;
  * 博客地址：http://www.cnblogs.com/WJ5888/p/4618465.html
  *
  * 在这里说明一下：lambda最终也是一个语法糖而已java通过内部类的方式实现的lambda表达式
+ *
+ * sout       -> 等价eclipse的syso
+ * alt+insert -> 等价eclipse的getter setter
+ * psvm->     -> 等价eclipse的main
+ * ctrl+q     -> 等价eclipse的类返回值的查看
+ * alt+enter  -> 等价eclipse的快速导入相关的类
+ *
  */
 public class lambdaTest {
 
