@@ -23,6 +23,6 @@ public class Lexical_scoping {
         new Lexical_scoping().r1.run();
         new Lexical_scoping().r2.run();
         //测试this
-        new Lexical_scoping().tf.testThis();
+        new Lexical_scoping().tf.testThis() ;
     }
 }
